@@ -1,244 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Munisf | Frontend Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaquery.css" />
+  </head>
+  <body>
     <!-- Floating Background Elements -->
     <div class="floating-elements" id="floatingElements"></div>
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo-container">
-                    <div class="logo" id="logo">M.Munisf</div>
-                    <div class="info-panel" id="infoPanel">
-                        <div class="info-item">
-                            <!-- <i class="fas fa-user"> -->
-                                <img src="images/img.jpeg" width="40px" height="40px " style="border-radius: 50%; display: flex; align-items: center; justify-content: center; " alt="Profile Picture">
-                            <!-- </i> -->
-                            <div class="info-content">
-                                <h3>Full Name</h3>
-                                <p>Muhammad Munisf</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div class="info-content">
-                                <h3>Experience</h3>
-                                <p>1 Year Frontend Developer</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div class="info-content">
-                                <h3>Contact Number</h3>
-                                <p>+92-312-9194375</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info-content">
-                                <h3>Email Address</h3>
-                                <p>m.munsif4375@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <nav>
+          <div class="logo-container">
+            <div class="logo" id="logo">M.Munisf</div>
+            <div class="info-panel" id="infoPanel">
+              <div class="info-item">
+                <div>
+                  <img
+                    src="images/img.jpeg"
+                    width="40px"
+                    height="40px "
+                    style="
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                    alt="Profile Picture"
+                  />
                 </div>
-                <div class="nav-links">
-                    <a href="#home" class="active">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <div class="info-content">
+                  <h3>Full Name</h3>
+                  <p>Muhammad Munisf</p>
                 </div>
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-briefcase"></i>
+                <div class="info-content">
+                  <h3>Experience</h3>
+                  <p>1 Year Frontend Developer</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div class="info-content">
+                  <h3>Contact Number</h3>
+                  <p>+92-312-9194375</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div class="info-content">
+                  <h3>Email Address</h3>
+                  <p>m.munsif4375@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Muhammad Munisf</h1>
-                <p>Frontend Developer with 1 year of experience creating responsive, user-friendly web applications using modern technologies like React, JavaScript, and CSS frameworks.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Muhammad Munisf</h1>
+          <p>
+            Frontend Developer with 1 year of experience creating responsive,
+            user-friendly web applications using modern technologies like React,
+            JavaScript, and CSS frameworks.
+          </p>
+          <a href="#contact" class="btn">Get In Touch</a>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="visible">Hello! I'm Muhammad Munisf, a passionate frontend developer with one year of professional experience. I specialize in creating modern, responsive web applications that provide excellent user experiences.</p>
-                    <p>My expertise includes HTML, CSS, JavaScript, and React.js, along with popular CSS frameworks like Bootstrap and Tailwind CSS. I'm also proficient in state management using Context API, Redux Toolkit, and Zustand.</p>
-                    <p>I'm constantly learning and staying up-to-date with the latest frontend technologies and best practices to deliver high-quality solutions for my clients.</p>
-                </div>
-                <div class="skills-container" id="skills">
-                    <div class="skill-card visible">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML5</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS3</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h3>React JS</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-wind"></i>
-                        <h3>Tailwind CSS</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Redux Toolkit</h3>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-cube"></i>
-                        <h3>Context API</h3>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="visible">
+              Hello! I'm Muhammad Munisf, a passionate frontend developer with
+              one year of professional experience. I specialize in creating
+              modern, responsive web applications that provide excellent user
+              experiences.
+            </p>
+            <p>
+              My expertise includes HTML, CSS, JavaScript, and React.js, along
+              with popular CSS frameworks like Bootstrap and Tailwind CSS. I'm
+              also proficient in state management using Context API, Redux
+              Toolkit, and Zustand.
+            </p>
+            <p>
+              I'm constantly learning and staying up-to-date with the latest
+              frontend technologies and best practices to deliver high-quality
+              solutions for my clients.
+            </p>
+          </div>
+          <div class="skills-container" id="skills">
+            <div class="skill-card visible">
+              <i class="fab fa-html5"></i>
+              <h3>HTML5</h3>
             </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-react"></i>
+              <h3>React JS</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-wind"></i>
+              <h3>Tailwind CSS</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-code-branch"></i>
+              <h3>Redux Toolkit</h3>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-cube"></i>
+              <h3>Context API</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <div class="container">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card visible">
-                    <div class="project-img">E-Commerce App</div>
-                    <div class="project-content">
-                        <h3>Modern E-Commerce Platform</h3>
-                        <p>A fully responsive e-commerce website with product filtering, cart functionality, and user authentication.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Redux Toolkit</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                        </div>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">Task Manager</div>
-                    <div class="project-content">
-                        <h3>Productivity Task Manager</h3>
-                        <p>A drag-and-drop task management application with categories, due dates, and progress tracking.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Context API</span>
-                            <span class="tech-tag">CSS3</span>
-                        </div>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">Weather App</div>
-                    <div class="project-content">
-                        <h3>Real-time Weather Dashboard</h3>
-                        <p>A weather application that displays current conditions and forecasts with a clean, intuitive UI.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API Integration</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+          <div class="project-card visible">
+            <div class="project-img">E-Commerce App</div>
+            <div class="project-content">
+              <h3>Modern E-Commerce Platform</h3>
+              <p>
+                A fully responsive e-commerce website with product filtering,
+                cart functionality, and user authentication.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Redux Toolkit</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <a href="#" class="btn">View Project</a>
             </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Task Manager</div>
+            <div class="project-content">
+              <h3>Productivity Task Manager</h3>
+              <p>
+                A drag-and-drop task management application with categories, due
+                dates, and progress tracking.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Context API</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Weather App</div>
+            <div class="project-content">
+              <h3>Real-time Weather Dashboard</h3>
+              <p>
+                A weather application that displays current conditions and
+                forecasts with a clean, intuitive UI.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API Integration</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item visible">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>contact@munisf.dev</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+1 (123) 456-7890</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Frontend Developer, Available Worldwide</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Enter subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+      <div class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item visible">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>m.munsif4375@gmail.com</p>
+              </div>
             </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+92-312-9194375</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Pakistan, Frontend Developer, Available Worldwide</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Enter subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/Muhammad-Munsif" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/m-munsif/ target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="copyright">&copy; 2023 Muhammad Munisf. All Rights Reserved.</p>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/Muhammad-Munsif" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/m-munsif" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+        <p class="copyright">
+          &copy; 2023 Muhammad Munisf. All Rights Reserved.
+        </p>
+      </div>
     </footer>
 
-    
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
