@@ -810,6 +810,7 @@ footer {
 
   .hero p {
     font-size: 1.1rem;
+    align-items: left;
   }
 
   .section-title {
