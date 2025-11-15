@@ -37,6 +37,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
   line-height: 1.6;
   transition: var(--transition);
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
