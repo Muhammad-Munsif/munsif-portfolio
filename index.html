@@ -61,7 +61,6 @@
         transition: var(--transition);
         overflow-x: hidden;
         width: 100%;
-        max-width: 100%;
       }
 
       .container {
@@ -121,7 +120,7 @@
         }
       }
 
-      /* Rest of your existing CSS remains the same */
+      /* Header Styles */
       header {
         background-color: var(--bg-color);
         box-shadow: var(--shadow);
@@ -181,6 +180,7 @@
         top: 100%;
         left: 0;
         width: 100%;
+        min-width: 300px;
         background: var(--card-bg);
         box-shadow: var(--shadow);
         padding: 2rem;
@@ -483,6 +483,26 @@
         transform: translateX(0);
       }
 
+      .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      .profile-img:hover {
+        transform: scale(1.03);
+      }
+
+      /* Skills Section */
       .skills-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -820,11 +840,16 @@
         .info-panel {
           grid-template-columns: 1fr;
           padding: 1.5rem;
+          min-width: 280px;
         }
 
         .container {
           width: 95%;
           padding: 0 10px;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
         }
       }
 
@@ -835,7 +860,7 @@
 
         .hero p {
           font-size: 1.1rem;
-          text-align: left;
+          text-align: center;
           padding: 0 10px;
         }
 
@@ -845,10 +870,6 @@
 
         .skills-container {
           grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        }
-
-        .projects-grid {
-          grid-template-columns: 1fr;
         }
 
         .form-group,
@@ -915,6 +936,11 @@
 
         .project-content {
           padding: 1.5rem;
+        }
+
+        .info-panel {
+          min-width: 250px;
+          left: -50px;
         }
       }
     </style>
@@ -1019,39 +1045,53 @@
               solutions for my clients.
             </p>
           </div>
-          <div class="skills-container" id="skills">
-            <div class="skill-card visible">
-              <i class="fab fa-html5"></i>
-              <h3>HTML5</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-css3-alt"></i>
-              <h3>CSS3</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-js"></i>
-              <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-react"></i>
-              <h3>React JS</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-bootstrap"></i>
-              <h3>Bootstrap</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-wind"></i>
-              <h3>Tailwind CSS</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-code-branch"></i>
-              <h3>Redux Toolkit</h3>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-cube"></i>
-              <h3>Context API</h3>
-            </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+              alt="Muhammad Munisf"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-container">
+          <div class="skill-card visible">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React JS</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-bootstrap"></i>
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-wind"></i>
+            <h3>Tailwind CSS</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Redux Toolkit</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-cube"></i>
+            <h3>Context API</h3>
           </div>
         </div>
       </div>
@@ -1276,7 +1316,8 @@
       const infoPanel = document.getElementById("infoPanel");
       let isInfoPanelOpen = false;
 
-      logo.addEventListener("click", () => {
+      logo.addEventListener("click", (e) => {
+        e.stopPropagation();
         isInfoPanelOpen = !isInfoPanelOpen;
         infoPanel.classList.toggle("active", isInfoPanelOpen);
 
