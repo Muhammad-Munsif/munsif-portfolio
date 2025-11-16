@@ -1,4 +1,4 @@
- <script>
+ 
         // Google Apps Script Web App URL - REPLACE THIS WITH YOUR URL
         const GOOGLE_SCRIPT_URL =
             "https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec";
@@ -284,4 +284,3 @@
         document.querySelectorAll("#projects").forEach((section) => {
             projectObserver.observe(section);
         });
-    </script>
