@@ -111,8 +111,10 @@ body {
 header {
   background-color: var(--bg-color);
   box-shadow: var(--shadow);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   transition: var(--transition);
 }
@@ -181,7 +183,6 @@ nav {
   z-index: 99;
   border-top: 3px solid var(--primary-color);
   border-radius: 0 0 12px 12px;
-  background-color: red;
 }
 
 .info-panel.active {
